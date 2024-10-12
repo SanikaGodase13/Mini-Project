@@ -1,0 +1,235 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e9e9f4, #f3d8f4); /* Subtle gradient for background */
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #b689f8, #f5e6ff); /* Gradient for header */
+    padding: 6rem 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    clip-path: circle(30% at right 70%);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Glow Button */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.btn-glow {
+    background-color: white;
+    color: #b689f8;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(182, 137, 248, 0.5);
+}
+
+.btn-glow:hover {
+    background-color: #b689f8;
+    color: white;
+    box-shadow: 0 0 20px rgba(182, 137, 248, 0.8), 0 0 30px rgba(182, 137, 248, 1);
+}
+
+/* Sections Styling */
+.section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: #6a3b96;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #b689f8;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Hobbies and Interests Section */
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #6a3b96;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
+
+.hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.hobby-item {
+    background-color: #f3e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem;
+    color: #6a3b96;
+    margin-bottom: 10px;
+}
+
+.hobby-item p {
+    color: #4a4a4a;
+    font-size: 1rem;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(106, 59, 150, 0.2);
+}
+
+/* Gallery Placeholder Section */
+.gallery-placeholder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item {
+    background-color: #f3e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-item h3 {
+    font-size: 1.4rem;
+    color: #6a3b96;
+    margin-top: 15px;
+}
+
+.gallery-item p {
+    color: #4a4a4a;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(106, 59, 150, 0.2);
+}
+
+/* Contact Section */
+.social-media {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 1.8rem;
+    color: #6a3b96;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(182, 137, 248, 0.6);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6a3b96;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
